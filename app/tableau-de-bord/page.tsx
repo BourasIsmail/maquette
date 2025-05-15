@@ -77,7 +77,7 @@ export default function TableauDeBordPage(): JSX.Element {
 
           {/* Aperçu général */}
           <TabsContent value="apercu" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <Card className="border-gray-200">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg text-gray-900 flex items-center">
@@ -89,11 +89,11 @@ export default function TableauDeBordPage(): JSX.Element {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-gray-500">Nombre total</p>
-                      <p className="text-2xl font-bold text-gray-900">{stats.totalMarches}</p>
+                      <p className="text-xl font-bold text-gray-900">{stats.totalMarches}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Montant total</p>
-                      <p className="text-2xl font-bold text-gray-900">{formatMontant(stats.montantTotalMarches)}</p>
+                      <p className="text-xl font-bold text-gray-900">{formatMontant(stats.montantTotalMarches)}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Payés</p>
@@ -118,11 +118,11 @@ export default function TableauDeBordPage(): JSX.Element {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-gray-500">Nombre total</p>
-                      <p className="text-2xl font-bold text-gray-900">{stats.totalBC}</p>
+                      <p className="text-xl font-bold text-gray-900">{stats.totalBC}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Montant total</p>
-                      <p className="text-2xl font-bold text-gray-900">{formatMontant(stats.montantTotalBC)}</p>
+                      <p className="text-xl font-bold text-gray-900">{formatMontant(stats.montantTotalBC)}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Payés</p>
@@ -147,11 +147,11 @@ export default function TableauDeBordPage(): JSX.Element {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-gray-500">Nombre total</p>
-                      <p className="text-2xl font-bold text-gray-900">{stats.totalContrats}</p>
+                      <p className="text-xl font-bold text-gray-900">{stats.totalContrats}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Montant total</p>
-                      <p className="text-2xl font-bold text-gray-900">{formatMontant(stats.montantTotalContrats)}</p>
+                      <p className="text-xl font-bold text-gray-900">{formatMontant(stats.montantTotalContrats)}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Actifs</p>
@@ -166,7 +166,7 @@ export default function TableauDeBordPage(): JSX.Element {
               </Card>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="border-gray-200">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900 flex items-center">
@@ -303,7 +303,7 @@ export default function TableauDeBordPage(): JSX.Element {
 
           {/* Contrats */}
           <TabsContent value="contrats" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Card className="border-gray-200">
                 <CardHeader>
                   <CardTitle className="text-lg text-gray-900">Statistiques des contrats</CardTitle>
